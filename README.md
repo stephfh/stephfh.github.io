@@ -1,3 +1,3 @@
-# SH128.github.io
----
-My accounts GitHub page, right? 
+# stephfh.github.io
+
+Just the public repo for my GitHub page, right? 😉
