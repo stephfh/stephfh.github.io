@@ -1,6 +1,8 @@
 :root {
-    --pink: #E8016D;
-    --darkPink: #6C0033;
+    --red: #F31818;
+    --darkRed: #990000;
+    --white: #fff;
+    --offWhite: #f0f0f0;
 }
 
 html {
@@ -13,15 +15,14 @@ html {
 
 body {
     background-image: url('images/background.svg'),
-        radial-gradient(circle, var(--pink), var(--darkPink));
+        radial-gradient(circle, var(--offWhite), var(--white));
     background-size: 340px, auto;
     min-height: calc(100vh - 500px);
     margin:250px;
-    font-family: "Karla", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Karla", sans-serif;
     font-weight: normal;
 }
 
@@ -34,7 +35,7 @@ h1,h2,h3,h4,h5,h6 {
     grid-area: headline;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-self: center;
-    border-bottom: 1px dotted #fff;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
     font-weight: 100;
     color: #fff;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
@@ -44,6 +45,7 @@ h1,h2,h3,h4,h5,h6 {
     grid-area: tagline;
     justify-self: center;
     text-align: center;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .media {
@@ -71,7 +73,7 @@ h1,h2,h3,h4,h5,h6 {
     list-style-type: none;
     font-size: 26px;
     margin-right: 25px;
-    color: var(--darkPink);
+    color: var(--darkRed);
 }
 .contact-icon a:hover {
     opacity: 0.5;
