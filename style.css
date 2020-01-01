@@ -1,13 +1,15 @@
 :root {
     --background: #fafafa;
-    --backgroundend: #e0e2e0;
     --accent: #75c4a4;
-    --grey: #222;
+    --grey: #525252;
 }
 
 html {
     box-sizing: border-box;
     font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--grey);
 }
 
 *, *:before, *:after {
@@ -17,68 +19,146 @@ html {
 }
 
 body {
-    background-image: radial-gradient(circle, var(--backgroundend), var(--background));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #b5b5b5;
-    min-height: 100vh;
+    background: var(--background);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr 50% 1fr;
     grid-template-areas:
-    "main"
-    "navigation";
-    justify-items: center;
-    align-items: center;
-}
-
-h1 {
-    color: var(--grey);
-    padding: 40px 0 20px 0;
-    font-size: 2rem;
+        ". header ."
+        ". main ."
+        ". footer .";
+    margin: 120px auto;
+    grid-gap: 64px;
 }
 
 p {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
     font-weight: 100;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 1.25rem;
+}
+
+h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 a, a:visited {
+    display: inline-block;
     color: var(--grey);
+    font-weight: 700;
+    text-decoration: none;
 }
 
 a:hover, a:active {
     color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.main {
-    grid-area: main;
+a::after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid var(--accent);
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+header {
+    grid-area: header;
     margin: 0 auto;
-}
-
-    img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-left: 80px;
-    }
-
-    img:hover {
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px, rgba(0, 0, 0, 0.5) 0px 0px 12px 0px;
-    }
-
-nav {
-    grid-area: navigation;
     text-align: center;
-    font-size: 1.25rem;
 }
 
-    nav > ul {
-        list-style: none;
+    header > nav > ul {
+        list-style-type: none;
+        margin: 16px auto;
     }
 
-    nav > ul > li {
-        display: inline;
-        padding: 15px;
+        header > nav > ul > li {
+            display: inline;
+            margin-right: 32px;
+        }
+
+            header > nav > ul > li > a {
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+
+                header > nav > ul > li > a:hover {
+                    font-weight: 300;
+                }
+
+    header > img {
+        border-radius: 100%;
+        width: 50%;
+        height: 50%;
+        margin: 64px auto;
     }
+
+    header > img:hover {
+        box-shadow:
+            rgba(0, 0, 0, 0.3) 0px 0px 8px 4px,
+            rgba(0, 0, 0, 0.3) 0px 0px 8px 4px;
+    }
+
+main {
+    grid-area: main;
+}
+
+.main__work {
+    margin: 64px auto;
+}
+
+    .main__work-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "design code"
+            "writing gamedev";
+        grid-gap: 32px;
+    }
+
+        .main__work-wrapper--design {
+            grid-area: design;
+        }
+
+        .main__work-wrapper--code {
+            grid-area: code;
+        }
+
+        .main__work-wrapper--writing {
+            grid-area: writing;
+        }
+
+        .main__work-wrapper--gamedev {
+            grid-area: gamedev;
+        }
+
+footer {
+    grid-area: footer;
+}
+
+    .footer__contact > ul {
+        list-style-type: none;
+    }
+
+        .footer__contact > ul > li {
+            display: inline;
+            font-size: 2.5rem;
+            margin-right: 32px;
+        }
