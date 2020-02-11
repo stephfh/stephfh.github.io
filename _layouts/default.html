@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    {% include head.html %}
+
+<body>
+    <header class="header">
+        <h1>{{ site.author.name }}</h1>
+        <a href="{{ site.baseurl }}">
+            <img src="https://avatars1.githubusercontent.com/u/4586850?s=460&v=4" alt="{{ site.author.name }}" />
+            <nav class="main-navigation" role="main-navigation">
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/uses">Uses</a></li>
+                    <li><a href="/">Notes</a></li>
+                </ul>
+            </nav>
+        </a>
+    </header>
+    <main class="main">
+        {{ content }}
+    </main>
+</body>
+</html>

@@ -1,67 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Stephanie Handsteiner | Full-Stack Developer</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,600,700,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header>
-        <h1>Stephanie Handsteiner</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <img src="https://avatars1.githubusercontent.com/u/4586850?s=460&v=4" />
-    </header>
-    <main>
-        <div id="about" class="main__about">
-            <h2>About</h2>
-            <p>I'm a full-stack web developer working from Cologne, Germany. I specialise in web based projects from scratch that are minimal, easy to use, performant and built with efficiency in mind.</p>
+---
+layout: default
+title: Home
+---
+{% for post in site.posts %}
+  <article class="article-list">
+    <a href="{{ post.url }}">
+      <div class="article-post" {% if post.image %}style="background-image:url({{ site.baseurl }}public/images/{{ post.image }}); background-position: center center;"{% endif %}>
+        <div class="article-dim">
+          <p class="article-date">{{ post.date | date_to_long_string: "ordinal" }}</p>
+          <h2 class="article-title">{{ post.title }}</h2>
         </div>
+      </div>
+    </a>
+  </article>
+{% endfor %}
 
-        <div id="work" class="main__work">
-            <h2>Work</h2>
-            <div class="main__work-wrapper">
-                <div class="main__work-wrapper--design">
-                    <h3>Design</h3>
-                    <p>I also like to design. I keep an eye on current and future designtrends, while respecting established standards for good UX.</p>
-                </div>
-                <div class="main__work-wrapper--code">
-                    <h3>Development</h3>
-                    <p>Most of my coding work is on my <a href="https://github.com/stephfh">GitHub</a>. I love open-source! I also like to play around with CSS and make useless things with it.</p>
-                </div>
-                <div class="main__work--writing">
-                    <h3>Writing</h3>
-                    <p>I usually post on <a href="https://dev.to/stephanie">DEV</a>. I enjoy contributing personal pieces containing my own opinions and tutorials to help other developers.</p>
-                </div>
-                <div class="main__work--gamedev">
-                    <h3>Gamedev</h3>
-                    <p>Combining another favourite of mine, gaming, with programming: I'm dabbling into game development, currently focusing on what you can do in a browser.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div id="contact" class="footer__contact">
-            <h2>Contact</h2>
-            <p>You can reach me on one of the following medias:</p>
-            <ul>
-                <li><a href="https://dribbble.com/stephfh"><i class="fab fa-dribbble"></i></a></li>
-                <li><a href="https://codepen.io/stephfh"><i class="fab fa-codepen"></i></a></li>
-                <li><a href="https://mastodon.social/@stephanie"><i class="fab fa-mastodon"></i></a></li>
-                <li><a href="https://instagram.com/stephfh_"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://telegram.me/Stephfh"><i class="fab fa-telegram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-</html>
