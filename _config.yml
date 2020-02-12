@@ -12,5 +12,9 @@ description:      'A Full-Stack Web Developer from Europe.'
 url:              https://stephfh.dev
 baseurl:          /
 
+author:
+  name:           'Stephanie Handsteiner'
+  url:            https://stephfh.dev
+
 github:
   repo:           https://github.com/stephfh/stephfh.github.io
