@@ -17,7 +17,7 @@ As a web developer you use a lot of different tools. There are a lot of options 
 ### Desktop Apps
 **Spark mail**, my e-mail client
 
-**Slack**, **Discord**, **Telegram**/**iMesssage**, communication channels
+**Slack**, **Discord**, **Telegram**/**iMessage**, communication channels
 
 **Spotify**, don't follow me, I have got awful taste in music.
 
