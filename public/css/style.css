@@ -54,19 +54,14 @@ a:hover, a:active {
     border-bottom: 2px solid var(--link);
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-
-h1 {
-    font-weight: 100;
-}
-
 header {
     grid-area: header;
     text-align: center;
 }
+
+    header > h1 {
+        font-weight: 100;
+    }
 
     header > a:hover {
         border: none;
