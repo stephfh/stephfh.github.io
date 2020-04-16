@@ -10,7 +10,7 @@ title:            'stephfh.dev'
 tagline:          'Full-Stack Developer'
 description:      'A Full-Stack Web Developer from Europe.'
 url:              https://stephfh.dev
-baseurl:          /
+baseurl:          '/'
 
 author:
   name:           'Stephanie Handsteiner'
