@@ -2,16 +2,14 @@
 layout: default
 title: Home
 ---
-{% for post in site.posts %}
-  <article class="article-list">
-    <a href="{{ post.url }}">
-      <div class="article-post" {% if post.image %}style="background-image:url({{ site.baseurl }}public/images/{{ post.image }}); background-position: center center;"{% endif %}>
-        <div class="article-dim">
-          <p class="article-date">{{ post.date | date_to_long_string: "ordinal" }}</p>
-          <h2 class="article-title">{{ post.title }}</h2>
-        </div>
-      </div>
-    </a>
-  </article>
-{% endfor %}
+<div class="intro">
+  <div class="intro-head">
+    <img src="https://avatars1.githubusercontent.com/u/4586850?s=460&v=4" alt="{{ site.author.name }}" />
+    <h1>Stephanie Handsteiner</h1>
+  </div>
 
+  <p class="intro-body">
+    I’m a full-stack web developer working from Cologne, Germany. I specialise in web based projects from scratch that
+    are minimal, easy to use, performant and built with efficiency in mind.
+  </p>
+</div>

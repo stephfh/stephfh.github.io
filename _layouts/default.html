@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-    {% include head.html %}
+{% include head.html %}
 
 <body>
-    <header class="header">
-        <h1>{{ site.author.name }}</h1>
-        <a href="{{ site.baseurl }}">
+    <aside class="sidebar">
+        {% if page.title != "Home" %}
+        <div class="sidebar intro">
+            <h1><a href="{{ site.baseurl }}">{{ site.author.name }}</a></h1>
             <img src="https://avatars1.githubusercontent.com/u/4586850?s=460&v=4" alt="{{ site.author.name }}" />
-        </a>
-        <nav class="main-navigation" role="main-navigation">
+        </div>
+        {% endif %}
+
+        <nav class="navigation" role="main" aria-label="Main">
             <ul>
                 <li><a href="/about">About</a></li>
                 <li><a href="/uses">Uses</a></li>
-                <li><a href="/">Notes</a></li>
+                <li><a href="/blog">Blog</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="main">
+
+        <ul class="find-me">
+            <li><a href="https://github.com/stephfh"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://dev.to/stephanie"><i class="fab fa-dev"></i></a></li>
+            <li><a href="https://dribbble.com/stephfh"><i class="fab fa-dribbble"></i></a></li>
+            <li><a href="https://instagram.com/stephfh_"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://telegram.me/Stephfh"><i class="fab fa-telegram"></i></a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
         {{ content }}
     </main>
+
+    <footer class="footer">
+        <em>Made with Jekyll and ☕️ in Cologne, Germany.</em>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7897b5f8f1.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-
-<div class="content-wrapper">
+<div>
   <h2>{{ page.title }}</h2>
-  <span class="post-date">{{ page.date | date_to_long_string: "ordinal" }}</span>
 
-  <p>{{ content }}</p>
+  <small>{{ page.date | date_to_long_string: "ordinal" }}</small>
+
+  <p class="article-content">{{ content }}</p>
 </div>

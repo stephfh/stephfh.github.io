@@ -3,13 +3,13 @@ layout: page
 title: About
 ---
 
-I'm a full-stack web developer working from Cologne, Germany. I specialise in web based projects from scratch that are minimal, easy to use, performant and built with efficiency in mind.
+## Moin! Servus! Hi! Hello! 👋
 
-My hobbies include but are not limited to writing code, desiging, watching movies and taking the longboard out for a ride.
-
-## Contact
-* [Dribbble](https://dribbble.com/stephfh)
-* [DEV](https://dev.to/stephanie)
-* [GitHub](https://github.com/stephfh)
-* [Instagram](https://instagram.com/stephfh_)
-* [Telegram](https://telegram.me/Stephfh)
+* I'm *currentYear - 1990* years old.
+* I'm a Full-Stack Developer, focusing on the frontend side of things.
+* I'm European 🇪🇺, currently living in the vibrant city of Cologne.
+* I love languages and I speak a few.
+* Games (video games, board games, card games, you name it) are a passion
+* ...as is skating.
+* Python was the first language I learnt, PHP the second.
+* I still use PHP today. There, I said it.
