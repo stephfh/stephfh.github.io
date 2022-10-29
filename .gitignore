@@ -3,4 +3,4 @@ _site
 .jekyll-cache
 .idea
 .vscode
-
+node_modules
