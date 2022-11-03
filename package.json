@@ -1,0 +1,17 @@
+{
+  "name": "stephfh.github.io",
+  "version": "1.0.0",
+  "repository": "git@github.com:stephfh/stephfh.github.io.git",
+  "author": "Stephanie Handsteiner <st.handsteiner@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^1.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  }
+}
