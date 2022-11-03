@@ -1,0 +1,15 @@
+---
+const { pathname } = Astro.url;
+---
+<header class="header">
+	<div class="header__image-container">
+		<img class="header__image" src="https://avatars1.githubusercontent.com/u/4586850?s=460&v=4" alt="Profile picture of
+		Stephanie"
+		/>
+	</div>
+	<div class="header__text">
+	{pathname === '/' ? <h1 class="header-text">👋 Hello! Moin! Servus! – I'm Stephanie, a <a href="https://github
+	.com/stephfh" rel="me">web developer</a> based in Cologne, Germany.</h1> : <p class="header-text">👋 Hello! Moin!
+	Servus! – I'm Stephanie, a <a href="https://github.com/stephfh" rel="me">web developer</a> based in Cologne, Germany.</p>}
+	</div>
+</header>
