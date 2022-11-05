@@ -1,0 +1,362 @@
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-Medium.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-MediumItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-Italic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-Light.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-LightItalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../fonts/JetbrainsMono/JetBrainsMono-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--bg-night: #1a1b26; /* Background (Night) */
+	--bg-storm: #24283b; /* Background (Storm) */
+	--black-100: #414868; /* Terminal black */
+	--blue: #565f89; /* Comments */
+	--blue-100: #9aa5ce; /* Markdown/HTML Text */
+	--blue-200: #a9b1d6; /* Editor foreground */
+	--blue-300: #7aa2f7; /* Function names, CSS props, terminal blue */
+	--blue-400: #2ac3de; /* Language support functions, CSS HTML elements */
+	--blue-500: #b4f9f8; /* RegEx Literals */
+	--cyan: #7dcfff; /* Object properties, Regex quantifiers and flags, Markdown headings, Terminal Cyan, Markdown code, Import/export keywords */
+	--green: #73daca; /* Object literal keys, Markdown links, Terminal Green */
+	--green-100: #9ece6a; /* Strings, CSS class names */
+	--white-100: #c0caf5; /* Variables, Classnames, Terminal white */
+	--white-200: #cfc9c2; /* Function params, semantic highlighting */
+	--purple: #bb9af7; /* Control Keywords, Storage Types, Regex symbols and operators, HTML Attributes, Terminal Magenta */
+	--yellow: #e0af68; /* Function parameters, Regex character sets, Terminal Yellow */
+	--orange: #ff9e64; /* Number and Boolean constants, Language support constants */
+	--red: #f7768e; /* This keyword, HTML elements, Regex group symbol, CSS units, Terminal Red */
+
+	--font-stack: 'JetBrains Mono', sans-serif;
+
+	--background: var(--bg-night);
+	--backgroundAccent: var(--blue);
+	--text: var(--white-100);
+	--textAccent: var(--white-200);
+	--headline: var(--orange);
+	--link: var(--white-100);
+	--linkAccent: var(--green-100);
+}
+@media(prefers-color-scheme: light) {
+	:root {
+		--background: var(--white);
+		--backgroundAccent: var(--white-100);
+		--text: var(--black-100);
+		--textAccent: var(--blue-100);
+		--headline: var(--red);
+		--link: var(--black-100);
+		--linkAccent: var(--red);
+	}
+}
+
+
+html {
+	background: var(--background);
+	font-family: var(--font-stack);
+	font-size: 100%;
+	font-weight: 500;
+	color: var(--text);
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1.2rem;
+	font-family: var(--font-stack);
+	color: var(--headline);
+	font-weight: 600;
+	font-style: normal;
+	position: relative;
+	margin: 0 0 1.5rem;
+	padding: 0 0 0 4rem;
+}
+
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+	position: absolute;
+	left: 0;
+	color: var(--text);
+	font-weight: 700;
+	width: 6rem;
+	text-align: right;
+	margin-left: -3rem;
+}
+
+h1:before {
+	content: '#';
+}
+
+h2:before {
+	content: '##';
+}
+
+h3:before {
+	content: '###';
+}
+
+h4:before {
+	content: '####';
+}
+
+h5:before {
+	content: '#####';
+}
+
+h6:before {
+	content: '######';
+}
+
+p,
+.paragraph {
+	font-size: 1.12rem;
+	line-height: 1.5;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-weight: 500;
+	font-style: italic;
+}
+
+a {
+	color: var(--link);
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+	text-decoration-skip: initial;
+	text-decoration-skip-ink: all;
+	text-underline-offset: 0.25rem;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+	color: var(--linkAccent);
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+	text-decoration-color: var(--linkAccent);
+}
+
+ul,
+.unordered-list {
+	list-style-type: none;
+	margin: 2rem 0;
+	padding: 0;
+	font-size: 1.12rem;
+	line-height: 1.5;
+}
+
+ul li,
+.unordered-list li {
+	position: relative;
+	padding-left: 1.5rem;
+}
+
+ul li:before,
+.unordered-list li:before {
+	position: absolute;
+	content: '*';
+	top: 0;
+	left: 0;
+}
+
+ol {
+	font-size: 1.12rem;
+	line-height: 1.5;
+}
+
+blockquote {
+	background: var(--backgroundAccent);
+	padding: 0.25rem 1rem;
+	margin: 1rem 0;
+	border-radius: 0.25rem;
+	border-left: 0.5rem solid rgba(0, 0, 0, 0.3);
+}
+
+.header {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 6rem;
+}
+
+.header-text {
+	font-size: 1.5rem;
+	color: var(--text);
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+.header-text:before {
+	content: '';
+}
+
+.header__image {
+	width: 100%;
+	border-radius: 100%;
+	position: relative;
+}
+
+.navigation {
+	margin-top: 3rem;
+}
+
+.navigation__list {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.navigation-list__item:not(:last-child) {
+	margin-right: 2rem;
+}
+
+.navigation-list__item:before {
+	content: '';
+	margin-right: 0;
+}
+
+pre.astro-code {
+	background: var(--bg-storm) !important;
+	padding: 0.25rem 1rem;
+	margin: 1rem 0;
+	border-radius: 0.25rem;
+	border-left: 0.5rem solid rgba(255, 255, 255, 0.1);
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+pre.astro-code code {
+	font-family: var(--font-stack);
+}
+
+@media (min-width: 768px) {
+
+	.header-text {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 992px) {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		padding: 0;
+	}
+
+	h1:before,
+	h2:before,
+	h3:before,
+	h4:before,
+	h5:before,
+	h6:before {
+		margin-left: -7rem;
+	}
+
+	body {
+		padding: 0;
+	}
+
+	.header {
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		margin: 12rem 0 6rem;
+	}
+
+	.header__image-container {
+		margin-right: 4rem;
+	}
+}

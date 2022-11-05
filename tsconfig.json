@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+	"target": "ESNext",
+	"module": "ESNext",
+	"moduleResolution": "node",
+	"resolveJsonModule": true,
+	"isolatedModules": true,
+	"noEmit": true,
+	"types": ["astro/client"],
+	"baseUrl": ".",
+	"importsNotUsedAsValues": "error",
+	"paths": {
+	  "@components/*": ["src/components/*"],
+	  "@layouts/*": ["src/layouts/*"]
+	}
+  }
+}
