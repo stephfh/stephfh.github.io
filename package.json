@@ -5,7 +5,7 @@
   "author": "Stephanie Handsteiner <st.handsteiner@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "astro": "^1.6.2"
+    "astro": "^3.0.0-rc.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
