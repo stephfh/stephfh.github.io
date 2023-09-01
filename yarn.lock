@@ -15,41 +15,41 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-2.0.1.tgz#f275b53bf029f1708b5eef960d7dde12ae6df82d"
   integrity sha512-DfBR7Cf+tOgQ4n7TIgTtU5x5SEA/08DNshpEPcT+91A0KbBlmUOYMBM/O6qAaHkmVo1KIoXQYhAmfdTT1zx9PQ==
 
-"@astrojs/internal-helpers@0.2.0-rc.2":
-  version "0.2.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.2.0-rc.2.tgz#90189cad8ef6bb64ac40fcbbde61e8d4807c990f"
-  integrity sha512-4I7o+g+luVrzsEUXsaB/TKIFE76mIKaBQvH8djPwCfJZN/GlgxcfpomgUbZGWUjUGwda1KxcHIeJIxfEv8BwSw==
+"@astrojs/internal-helpers@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.2.0.tgz#3b6fabd28fba86aa44e26f9fbb238ac6b4962b71"
+  integrity sha512-NQ4ppp1CM0HNkKbJNM4saVSfmUYzGlRalF6wx7F6T/MYHYSWGuojY89/oFTy4t8VlOGUCUijlsVNNeziWaUo5g==
 
-"@astrojs/markdown-remark@3.0.0-rc.1":
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-3.0.0-rc.1.tgz#87f3563564d5079770929541a5d9b4956d5c5267"
-  integrity sha512-zgfwa+2lyBGoawOu1TqqIrv2DEEpviItsnc/Lqjl8/qBa5MdBwdQyjO0z3mLGQU41MHV0Gu51GPrPq6XzVNbHg==
+"@astrojs/markdown-remark@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-3.0.0.tgz#2e191a1714b95721c1f109cd0e9a1b36e24d25a0"
+  integrity sha512-s8I49Je4++ImgYAgwL32HgN8m6we2qz3RtBpN4AjObMODPwDylmzUHZksD8Toy31q/P59ED3MuwphqOGm9l03w==
   dependencies:
-    "@astrojs/prism" "^3.0.0-rc.1"
-    github-slugger "^1.5.0"
-    import-meta-resolve "^2.2.2"
+    "@astrojs/prism" "^3.0.0"
+    github-slugger "^2.0.0"
+    import-meta-resolve "^3.0.0"
     rehype-raw "^6.1.1"
-    rehype-stringify "^9.0.3"
+    rehype-stringify "^9.0.4"
     remark-gfm "^3.0.1"
     remark-parse "^10.0.2"
     remark-rehype "^10.1.0"
     remark-smartypants "^2.0.0"
-    shiki "^0.14.1"
+    shiki "^0.14.3"
     unified "^10.1.2"
     unist-util-visit "^4.1.2"
     vfile "^5.3.7"
 
-"@astrojs/prism@^3.0.0-rc.1":
-  version "3.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-3.0.0-rc.1.tgz#b6538c6eb716066533f1cd74e98b00fd26480163"
-  integrity sha512-LxIU3gb/WQ79mIO35jTbuBa+GEAj+qnJA+YEgGdyGd4nRPoVb59PxU259HKvtYkudWov8HCeZo175vfYdnOxdg==
+"@astrojs/prism@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-3.0.0.tgz#c9443e4cbf435acf0b5adc2c627d9789991514e7"
+  integrity sha512-g61lZupWq1bYbcBnYZqdjndShr/J3l/oFobBKPA3+qMat146zce3nz2kdO4giGbhYDt4gYdhmoBz0vZJ4sIurQ==
   dependencies:
     prismjs "^1.29.0"
 
-"@astrojs/telemetry@3.0.0-rc.4":
-  version "3.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/@astrojs/telemetry/-/telemetry-3.0.0-rc.4.tgz#398ed14655d2f383b63b4328e98d2c064f4be257"
-  integrity sha512-rLHq9vhnQr2njh6UNeCZRi2IWew7USFEBCHJEHPcERaAK+2xPLEru5+zrjoIimakSHiv0NuO+NGHRfdlUl3Hlg==
+"@astrojs/telemetry@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/telemetry/-/telemetry-3.0.0.tgz#1af7e508f752805a52f44160723d1347ac07ca4e"
+  integrity sha512-RhFlEXTiT0gbWX1osMuPS9IWm1SwhQmCZVAdAixrPyZ0xiLlHfw3Nkw3z6IYuzX3hqbx24G4XmkT/akBMBqxPg==
   dependencies:
     ci-info "^3.8.0"
     debug "^4.3.4"
@@ -697,15 +697,15 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro@^3.0.0-rc.10:
-  version "3.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-3.0.0-rc.10.tgz#91b699b8de4a4ff04c13cbdce057570662f8a253"
-  integrity sha512-5qh2QFw09nGtDPr2EOexol1EDjR7pvFy6YD9CaQrdJ33STiQelo7zk+sVvgIOmmFpeUuhvUga6a+KFUMmL0+Aw==
+astro@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-3.0.6.tgz#3ae15bdf2fd3285b0189a5ab10bd5ed33ecc0e00"
+  integrity sha512-I4W71g/IzRp1dYHKbQGKp44TSlR+vO3z1c2TscMMJPCyQ3b15o0DVLWibd4zdDDeAQ1JqM8jvQy+nOYMIlacpg==
   dependencies:
     "@astrojs/compiler" "^2.0.1"
-    "@astrojs/internal-helpers" "0.2.0-rc.2"
-    "@astrojs/markdown-remark" "3.0.0-rc.1"
-    "@astrojs/telemetry" "3.0.0-rc.4"
+    "@astrojs/internal-helpers" "0.2.0"
+    "@astrojs/markdown-remark" "3.0.0"
+    "@astrojs/telemetry" "3.0.0"
     "@babel/core" "^7.22.10"
     "@babel/generator" "^7.22.10"
     "@babel/parser" "^7.22.10"
@@ -742,6 +742,7 @@ astro@^3.0.0-rc.10:
     preferred-pm "^3.0.3"
     prompts "^2.4.2"
     rehype "^12.0.1"
+    resolve "^1.22.4"
     semver "^7.5.4"
     server-destroy "^1.0.1"
     sharp "^0.32.5"
@@ -1302,11 +1303,6 @@ github-from-package@0.0.0:
   resolved "https://registry.yarnpkg.com/github-from-package/-/github-from-package-0.0.0.tgz#97fb5d96bfde8973313f20e8288ef9a167fa64ce"
   integrity sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==
 
-github-slugger@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.5.0.tgz#17891bbc73232051474d68bd867a34625c955f7d"
-  integrity sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==
-
 github-slugger@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-2.0.0.tgz#52cf2f9279a21eb6c59dd385b410f0c0adda8f1a"
@@ -1458,10 +1454,10 @@ ieee754@^1.1.13, ieee754@^1.2.1:
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
-import-meta-resolve@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/import-meta-resolve/-/import-meta-resolve-2.2.2.tgz#75237301e72d1f0fbd74dbc6cca9324b164c2cc9"
-  integrity sha512-f8KcQ1D80V7RnqVm+/lirO9zkOxjGxhaTC1IPrBGd3MEfNgmNG67tSUO9gTi2F3Blr2Az6g1vocaxzkVnWl9MA==
+import-meta-resolve@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/import-meta-resolve/-/import-meta-resolve-3.0.0.tgz#94a6aabc623874fbc2f3525ec1300db71c6cbc11"
+  integrity sha512-4IwhLhNNA8yy445rPjD/lWh++7hMDOml2eHtd58eG7h+qK3EryMuuRbsHGPikCoAgIkkDnckKfWSk2iDla/ejg==
 
 inherits@^2.0.3, inherits@^2.0.4:
   version "2.0.4"
@@ -2444,7 +2440,7 @@ rehype-raw@^6.1.1:
     hast-util-raw "^7.2.0"
     unified "^10.0.0"
 
-rehype-stringify@^9.0.0, rehype-stringify@^9.0.3:
+rehype-stringify@^9.0.0, rehype-stringify@^9.0.4:
   version "9.0.4"
   resolved "https://registry.yarnpkg.com/rehype-stringify/-/rehype-stringify-9.0.4.tgz#31dbb9de6f5034c6964760a1b1083218059c4343"
   integrity sha512-Uk5xu1YKdqobe5XpSskwPvo1XeHUUucWEQSl8hTrXt5selvca1e8K1EZ37E6YoZ4BT8BCqCdVfQW7OfHfthtVQ==
@@ -2501,7 +2497,7 @@ remark-smartypants@^2.0.0:
     retext-smartypants "^5.1.0"
     unist-util-visit "^4.1.0"
 
-resolve@^1.17.0:
+resolve@^1.17.0, resolve@^1.22.4:
   version "1.22.4"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
   integrity sha512-PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==
@@ -2639,7 +2635,7 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-shiki@^0.14.1, shiki@^0.14.3:
+shiki@^0.14.3:
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.14.3.tgz#d1a93c463942bdafb9866d74d619a4347d0bbf64"
   integrity sha512-U3S/a+b0KS+UkTyMjoNojvTgrBHjgp7L6ovhFVZsXmBGnVdQ4K4U9oK0z63w538S91ATngv1vXigHCSWOwnr+g==
