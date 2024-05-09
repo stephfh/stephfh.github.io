@@ -1,0 +1,50 @@
+---
+import {getCollection} from "astro:content";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import formatDate from "../utils/formatDate";
+
+const posts = (await getCollection("posts")).sort(function (first, second) {
+    return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
+});
+---
+
+<Layout title="stephfh.dev">
+    <main>
+        <h1 class="introduction__title">Hi, I'm Stephanie! 👋</h1>
+        <p class="introduction">
+            This is my little corner on the internet.<br/>
+            I'm a <span class="orange">web developer</span> with a couple of years
+            experience with HTML, CSS, PHP, JavaScript/TypeScript under my belt.
+            Outside of work I like to take the mountain bike for a ride around the area (or further).
+        </p>
+
+        <ul role="list" class="post-card-list">
+            {posts.length === 0 && <p>Soon™ 👀. Stay tuned. </p>}
+            {
+              posts.length !== 0 &&
+              posts
+                .slice(0, 2)
+                .map((post) => (
+                  <Card
+                    date={formatDate(post.data.publishedAt)}
+                    title={post.data.title}
+                    body={post.data.description}
+                    href=`posts/${post.slug}`
+                  />
+                ))
+            }
+        </ul>
+    </main>
+</Layout>
+<style>
+    .introduction__title {
+        font-family: var(--font-stack-serif), serif;
+        margin-top: 3rem;
+    }
+
+    .post-card-list {
+        list-style: none;
+        margin: 2rem 0;
+    }
+</style>
