@@ -1,15 +1,34 @@
 ---
-const { pathname } = Astro.url;
+
 ---
+
 <header class="header">
-	<div class="header__image-container">
-		<img class="header__image" src="https://avatars1.githubusercontent.com/u/4586850?s=460&v=4" alt="Profile picture of
-		Stephanie"
-		/>
-	</div>
-	<div class="header__text">
-	{pathname === '/' ? <h1 class="header-text">👋 Hello! Moin! Servus! – I'm Stephanie, a <a href="https://github
-	.com/stephfh" rel="me">web developer</a> based in Cologne, Germany.</h1> : <p class="header-text">👋 Hello! Moin!
-	Servus! – I'm Stephanie, a <a href="https://github.com/stephfh" rel="me">web developer</a> based in Cologne, Germany.</p>}
-	</div>
+  <a href="/" class="header__logo">stephfh.dev</a>
+  <nav class="navigation">
+    <ul class="navigation-list">
+      <li class="navigation-list__item">
+        <a href="/uses" class="navigation-list-item__anchor">Uses</a>
+      </li>
+    </ul>
+  </nav>
 </header>
+<style>
+  .header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    color: var(--light-grey);
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .navigation-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 1rem;
+  }
+</style>

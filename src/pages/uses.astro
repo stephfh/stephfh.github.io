@@ -1,36 +1,38 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 ---
-<BaseLayout>
-	<h1>Uses</h1>
-	<p class="paragraph">
-		Inspired by <a href="https://uses.tech/">Wes Bos' uses.tech</a>
-	</p>
-	<p class="paragraph">
-		As a developer you use a lot of different tools. There are a lot of options out there and everyone has their own
-		 set of tools, below I’ve listed <em>some</em> of the tools in my setup.
-	</p>
-	<h2>👩‍💻 Tech</h2>
-	<ul class="unordered-list">
-		<li>MacBook Pro, Retina 2015 (15-inch) with a Magic Keyboard and Trackpad externally</li>
-        <li>LG UltraWide Display, 4k @ 34"</li>
-        <li>iPhone 14</li>
+<Layout title="stephfh.dev – Used things">
+    <h1>Used things</h1>
+    <p>Inspired by <a href="https://uses.tech">Wes Bos' uses.tech</a>
+        <br/>
+        As a developer you use a lot of different tools. There are a lot of options out there and
+        everyone has their own set of tools, below I’ve listed some of the tools in my setup.
+    </p>
+
+    <h2>👩‍💻 Tech</h2>
+    <ul>
+        <li>MacBook Pro, Retina 2015 (15-inch)</li>
+        <li>Magic Keyboard</li>
+        <li>Magic Trackpad</li>
+        <li>LG Ultrawide 4k @ 34"</li>
+        <li>iPhone 14 Plus (RED)</li>
         <li>AirPods Pro</li>
+        <li>CCZ Melody in ears</li>
         <li>HyperX QuadCast Microphone</li>
-	</ul>
-	<h2>💻 Software</h2>
-	<ul class="unordered-list">
-		<li>Editor: JetBrains’ PhpStorm and vim for quick edits</li>
-        <li>Font: JetBrains Mono</li>
-        <li>Theme: GitHub's Theme</li>
-        <li>Terminal: Hyper (Shell: zsh and of course ohmyzsh alongside), with JetBrains Mono including the NerdFonts
-        Patch as a font</li>
-        <li>Browser: All of them, to dev mostly Sizzy, to browse mostly Safari on macOS</li>
-        <li>Design: InVision Studio, Figma</li>
-        <li>Mail: Apple Mail (simple, huh?)</li>
-        <li>Music: Spotify Premium</li>
-        <li>Database Management: DataGrip</li>
+        <li>Creality Ender 3 3D-Printer</li>
+    </ul>
+
+    <h2>💻 Software</h2>
+    <ul>
+        <li>Editor: JetBrains PhpStorm and for quick edits neovim</li>
+        <li>Font: JetBrains Mono with ligatures enabled (yes, I'm one of those) and NerdFonts patch</li>
+        <li>Terminal: Hyper, Shell: zsh with ohmyzsh</li>
+        <li>Browser: As I'm  a web developer, technically all of them. For browsing mostly Safari (MacOS and iOS)</li>
+        <li>Design: Figma</li>
+        <li>Mail: Apple Mail</li>
+        <li>Database Management: Datagrip (within PhpStorm)</li>
         <li>Recording: OBS</li>
-        <li>Notes taking: Obsidian</li>
-	</li>
-</BaseLayout>
+        <li>Brain dump: Obsidian</li>
+        <li>Misc: Raycast</li>
+    </ul>
+</Layout>

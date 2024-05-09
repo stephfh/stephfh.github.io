@@ -1,3 +1,3 @@
-# stephfh.github.io
+# stephfh.dev
 
-Just the public repo for my GitHub page, right? 😉
+Repository for my own blog.
